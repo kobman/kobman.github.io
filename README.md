@@ -41,11 +41,11 @@ To install KOBMAN locally running against your local server, run the following c
 	$ source ~/.kobman/bin/kobman-init.sh
 
 
-### Local environment commands
+### KOBman commands
 
 Run the following commands on the terminal to manage respective environments.
 
-### Install commands:
+### Install command:
 
         $ kob install --environment [environment_name] --version [version_tag]
 
@@ -58,7 +58,7 @@ Please run the following command to get the list of other environments and its v
 
 ____________________
 
-### Uninstall commands:
+### Uninstall command:
 
         $ kob uninstall --environment [environment_name] --version [version_tag]
 
@@ -67,7 +67,7 @@ ____________________
 
 ____________________
 
-### Version commands:
+### Version command:
 
     $ kob --version
     $ kob --version --environment [environment_name]
