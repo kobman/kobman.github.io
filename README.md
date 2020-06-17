@@ -1,37 +1,97 @@
-## Welcome to GitHub Pages
+# KOBman
 
-You can use the [editor on GitHub](https://github.com/kobman/kobman.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**KOBman** , is A command line utility inspired from sdkman !!
+KOBMan gives you a *kob* command on your shell , you can use it to automate the setup of various development environments required for KOB projects  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+# KOBMAN! CLI
+### The KochiOrgBook Manager Command Line Interface<!--Text-->
 
-- Bulleted
-- List
+<!--Text-->
 
-1. Numbered
-2. List
+<!--
+<!--[![Build Status](https://travis-ci.org/kobman/kobman-cli.svg?branch=master)](https://travis-ci.org/kobman/kobman-cli)
+[![Latest Version](https://api.bintray.com/packages/kobman/generic/kobman-cli/images/download.svg) ](https://bintray.com/kobman/generic/kobman-cli/_latestVersion)
+[![Backers on Open Collective](https://opencollective.com/kobman/backers/badge.svg)](#backers)
+[![Sponsors on Open Collective](https://opencollective.com/kobman/sponsors/badge.svg)](#sponsors)
+[![Slack](https://slack.kobman.io/badge.svg)](https://slack.kobman.io)
+-->
 
-**Bold** and _Italic_ and `Code` text
+KOBMAN is a tool for managing parallel Versions of multiple KochiOrgBook projects on any Unix based system. It provides a convenient command line interface for installing, removing and listing Environments.
 
-[Link](url) and ![Image](src)
-```
+See documentation on the [KOBMAN! website](https://kobman.github.io).
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Installation
 
-### Jekyll Themes
+Open your favourite terminal and enter the following:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kobman/kobman.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    $ curl -L https://raw.githubusercontent.com/hyperledgerkochi/KOBman/dist/dist/get.kobman.io | bash
 
-### Support or Contact
+If the environment needs tweaking for KOBMAN to be installed, the installer will prompt you accordingly and ask you to restart.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+### Local Installation
+
+To install KOBMAN locally running against your local server, run the following commands:
+
+
+	$ source ~/.kobman/bin/kobman-init.sh
+
+
+### Local environment commands
+
+Run the following commands on the terminal to manage respective environments.
+
+### Install commands:
+
+        $ kob install --environment [environment_name] --version [version_tag]
+
+        Example   :
+           $ kob install --environment KOBman --version 0.0.2
+
+Please run the following command to get the list of other environments and its versions.
+
+	   	`$ kob list`
+
+____________________
+
+### Uninstall commands:
+
+        $ kob uninstall --environment [environment_name] --version [version_tag]
+
+        Example   :
+           $ kob uninstall --environment KOBman --version 0.0.2
+
+____________________
+
+### Version commands:
+
+    $ kob --version
+    $ kob --version --environment [environment_name]
+
+    Example   :
+       $ kob --version --environment KOBman
+
+____________________
+
+### Other useful commands:        
+
+        $ kob list
+        $ kob status        
+        $ kob help     
+
+
+
+## Adding new features
+
+For new features creation , you have to create a new file (extention script) in the below listed directory,test it & publish
+
+        ./kobman/env/
+
+## Contributors
+
+This project exists thanks to all the people who contribute.
+<a href="https://github.com/kobman/KOBman/graphs/contributors"><img src="https://i.stack.imgur.com/kk4j4.jpg" /></a>
